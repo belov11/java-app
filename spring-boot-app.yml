@@ -30,7 +30,7 @@ spec:
             # - name: POSTGRES_DATABASE
             #   value: postgres
             #.java-app.svc.cluster.local
-          image: registry-service.docker-registry:5000/java-app:<TAG>
+          image: registry.example.com/java-app:<TAG>
           ports:
             - name: http
               containerPort: 8080
