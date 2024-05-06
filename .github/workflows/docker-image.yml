@@ -8,6 +8,6 @@ jobs:
     runs-on: my-custom-runner
     steps:
     - name: Resolve dns name
-      run: echo "192.168.33.102 jenkins.app.test www.jenkins.app.test" >> /etc/hosts
+      run: sudo sh -c 'echo "192.168.33.102 jenkins.app.test www.jenkins.app.test" >> /etc/hosts'
     - name: Build the Docker image
       run: curl http://jenkins.app.test/job/java-app-pipeline/build?token=jkhdsaksdhaiasouuriweurower
