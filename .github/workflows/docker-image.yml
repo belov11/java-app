@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: my-custom-runner
     steps:
     - name: Build the Docker image
-      run: curl http://jenkins.jenkins/
+      run: curl http://jenkins.jenkins:8080
