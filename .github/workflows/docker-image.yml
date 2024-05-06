@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the Docker image
-      run: echo "192.168.33.102 jenkins.app.test www.jenkins.app.test" >> /etc/hosts
+      run: whoami
     - name: test
       run: cat /etc/hosts
