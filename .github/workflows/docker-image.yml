@@ -5,9 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
     - name: Build the Docker image
-      run: ping 192.168.33.102
-    - name: test
-      run: cat /etc/hosts
+      run: curl http://jenkins.app.test/
