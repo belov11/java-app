@@ -1,0 +1,11 @@
+name: Starting jenkins CI
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Build the Docker image
+      run: curl http://jenkins.app.test/
