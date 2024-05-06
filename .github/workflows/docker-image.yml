@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the Docker image
-      run: whoami
+      run: ping 192.168.33.102
     - name: test
       run: cat /etc/hosts
