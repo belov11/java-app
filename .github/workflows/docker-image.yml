@@ -8,4 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the Docker image
-      run: curl https://192.168.33.101:6443/
+      run: echo "192.168.33.102 jenkins.app.test www.jenkins.app.test" >> /etc/hosts
+    - name: test
+      run: cat /etc/hosts
