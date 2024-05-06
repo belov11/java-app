@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build the Docker image
-      run: curl http://jenkins.app.test/
+      run: curl https://192.168.33.101:6443/
