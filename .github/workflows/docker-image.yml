@@ -8,4 +8,4 @@ jobs:
     runs-on: my-custom-runner
     steps:
     - name: Build the Docker image
-      run: curl http://jenkins.jenkins:8080
+      run: curl http://jenkins.jenkins:8080/job/java-app-pipeline/build?token=jkhdsaksdhaiasouuriweurower
