@@ -10,4 +10,3 @@ COPY --from=build /app/target/employee-management-0.0.1-SNAPSHOT.jar /project/ap
 WORKDIR /project
 EXPOSE 8080/tcp
 ENTRYPOINT ["java", "-jar", "/project/app.jar"]
-
